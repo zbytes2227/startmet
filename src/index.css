@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Outfit", system-ui, -apple-system, sans-serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --color-startmet-bg: #060913;
+  --color-startmet-surface: #0a0f24;
+  --color-startmet-elevated: #0f1636;
+  --color-startmet-border: #182244;
+  --color-startmet-green: #00DF59;
+  --color-startmet-purple: #6819F7;
+}
+
+:root {
+  --sm-bg: #060913;
+  --sm-surface: #0a0f24;
+  --sm-elevated: #0f1636;
+  --sm-border: #182244;
+  --sm-border-subtle: rgba(255, 255, 255, 0.08);
+  --sm-green: #00DF59;
+  --sm-purple: #6819F7;
+  --sm-text-primary: #FFFFFF;
+  --sm-text-secondary: #CBD5E1;
+  --sm-text-muted: #7E8B9F;
+}
+
+html {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background-color: #060913;
+  color: #F8FAFC;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: #00DF59;
+  color: #060913;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+/* Hairline divider utility */
+.hairline-b {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.hairline-t {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+.hairline-r {
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+.hairline-l {
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

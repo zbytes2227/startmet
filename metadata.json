@@ -1,0 +1,6 @@
+{
+  "name": "STARTMET - Startup Ecosystem & Venture Studio",
+  "description": "STARTMET helps founders turn ideas into real businesses across India and beyond. From idea validation, MVP development, company formation, and brand launch to growth and investor readiness.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
